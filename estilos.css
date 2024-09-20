@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color:#8b274f; /* Rosa pastel */
+    color: white; /* Bordó */
+}
+h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.contact-links {
+    margin-top: 15px;
+    text-align: center;
+}
+.contact-links a {
+    color:white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.contact-links a:hover {
+    text-decoration: underline;
+}
+.summary {
+    text-align: center;
+    padding: 20px;
+    background-color: #fbe4f0; /* Rosa pastel suave */
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.column {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.left-column {
+    background-color: #f7f7f7;
+    border: 2px solid #f7b5d6; /* Borde rosa pastel */
+    margin-right: 1px;
+}
+.right-column {
+    background-color: #f7f7f7;
+    margin-left: 1px;
+    border: 2px solid #f7b5d6;
+}
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:#8b274f ; /* Bordó */
+}
+h4 {
+    color:#8b274f ;
+}
+p, ul {
+    margin: 5px 0;
+}
+ul {
+    padding-left: 20px;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    .left-column, .right-column {
+        border-right: none;
+        border-left: none;
+        border-top: 4px solid #f7b5d6;
+    }
+}
